@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Form = styled.form.attrs({
   role: 'form'
-})`
+})<React.FormHTMLAttributes<HTMLFormElement>>`
   display: grid;
   grid-template-columns: 1fr auto;
   background-color: var(--cor-secundaria);
@@ -13,14 +13,14 @@ export const Form = styled.form.attrs({
 
 export const Campo = styled.input.attrs({
   type: 'text'
-})`
+})<React.InputHTMLAttributes<HTMLInputElement>>`
   padding: 0 16px;
   outline-color: var(--cor-principal);
 `
 
 export const BotaoPesquisar = styled.button.attrs({
   type: 'submit'
-})`
+})<React.ButtonHTMLAttributes<HTMLButtonElement>>`
   background-color: var(--cor-principal);
   border: 1px solid var(--cor-principal);
   height: 40px;

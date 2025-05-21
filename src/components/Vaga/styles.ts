@@ -27,7 +27,7 @@ export const VagaTitulo = styled.h3`
 
 export const VagaLink = styled.a.attrs({
   href: '#'
-})`
+})<React.AnchorHTMLAttributes<HTMLAnchorElement>>`
   border-color: var(--cor-secundaria);
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);
